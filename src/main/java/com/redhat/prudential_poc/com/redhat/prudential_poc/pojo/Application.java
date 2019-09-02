@@ -6,12 +6,115 @@ package com.redhat.prudential_poc.com.redhat.prudential_poc.pojo;
 
 public class Application implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Application() {
-    }
+	@org.kie.api.definition.type.Label(value = "身分別")
+	private java.lang.String identification;
+	@org.kie.api.definition.type.Label(value = "姓名")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "ID")
+	private java.lang.String id;
+	@org.kie.api.definition.type.Label(value = "年齡")
+	private java.lang.Integer age;
+	@org.kie.api.definition.type.Label(value = "性別")
+	private java.lang.String sex;
+	@org.kie.api.definition.type.Label(value = "戶籍地址")
+	private java.lang.String homeAddr;
+	@org.kie.api.definition.type.Label(value = "通訊地址")
+	private java.lang.String mailingAddr;
+	@org.kie.api.definition.type.Label(value = "手機號碼")
+	private java.lang.String cellNo;
+	@org.kie.api.definition.type.Label(value = "與被保險人之關係")
+	private java.lang.String relation;
 
+	public Application() {
+	}
 
+	public java.lang.String getIdentification() {
+		return this.identification;
+	}
 
+	public void setIdentification(java.lang.String identification) {
+		this.identification = identification;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.String getSex() {
+		return this.sex;
+	}
+
+	public void setSex(java.lang.String sex) {
+		this.sex = sex;
+	}
+
+	public java.lang.String getHomeAddr() {
+		return this.homeAddr;
+	}
+
+	public void setHomeAddr(java.lang.String homeAddr) {
+		this.homeAddr = homeAddr;
+	}
+
+	public java.lang.String getMailingAddr() {
+		return this.mailingAddr;
+	}
+
+	public void setMailingAddr(java.lang.String mailingAddr) {
+		this.mailingAddr = mailingAddr;
+	}
+
+	public java.lang.String getCellNo() {
+		return this.cellNo;
+	}
+
+	public void setCellNo(java.lang.String cellNo) {
+		this.cellNo = cellNo;
+	}
+
+	public java.lang.String getRelation() {
+		return this.relation;
+	}
+
+	public void setRelation(java.lang.String relation) {
+		this.relation = relation;
+	}
+
+	public Application(java.lang.String identification, java.lang.String name,
+			java.lang.String id, java.lang.Integer age, java.lang.String sex,
+			java.lang.String homeAddr, java.lang.String mailingAddr,
+			java.lang.String cellNo, java.lang.String relation) {
+		this.identification = identification;
+		this.name = name;
+		this.id = id;
+		this.age = age;
+		this.sex = sex;
+		this.homeAddr = homeAddr;
+		this.mailingAddr = mailingAddr;
+		this.cellNo = cellNo;
+		this.relation = relation;
+	}
 
 }
