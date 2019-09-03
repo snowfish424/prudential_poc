@@ -8,7 +8,7 @@ package com.redhat.prudential_poc.pojo;
 public class Insured implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
-	//Field
+	
 	@org.kie.api.definition.type.Label("身分別")
 	private java.lang.String identification;
 	@org.kie.api.definition.type.Label("姓名")
