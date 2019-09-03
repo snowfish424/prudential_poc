@@ -9,26 +9,29 @@ public class Insured implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "身分別")
+	@org.kie.api.definition.type.Label("身分別")
 	private java.lang.String identification;
-	@org.kie.api.definition.type.Label(value = "姓名")
+	@org.kie.api.definition.type.Label("姓名")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "ID")
+	@org.kie.api.definition.type.Label("ID")
 	private java.lang.String insuredId;
-	@org.kie.api.definition.type.Label(value = "年齡")
+	@org.kie.api.definition.type.Label("年齡")
 	private java.lang.Integer age;
-	@org.kie.api.definition.type.Label(value = "性別")
+	@org.kie.api.definition.type.Label("性別")
 	private java.lang.String sex;
-	@org.kie.api.definition.type.Label(value = "戶籍地址")
+	@org.kie.api.definition.type.Label("戶籍地址")
 	private java.lang.String homeAddr;
-	@org.kie.api.definition.type.Label(value = "通訊地址")
+	@org.kie.api.definition.type.Label("通訊地址")
 	private java.lang.String mailingAddr;
-	@org.kie.api.definition.type.Label(value = "手機")
+	@org.kie.api.definition.type.Label("手機")
 	private java.lang.String cellNo;
-	@org.kie.api.definition.type.Label(value = "保額")
+	@org.kie.api.definition.type.Label("保額")
 	private java.lang.Integer amount;
-	@org.kie.api.definition.type.Label(value = "要保人ID")
+	@org.kie.api.definition.type.Label("要保人ID")
 	private java.lang.String id;
+
+	@org.kie.api.definition.type.Label(value = "核保結果")
+	private java.lang.String status;
 
 	public Insured() {
 	}
@@ -113,11 +116,20 @@ public class Insured implements java.io.Serializable {
 		this.id = id;
 	}
 
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
 	public Insured(java.lang.String identification, java.lang.String name,
 			java.lang.String insuredId, java.lang.Integer age,
 			java.lang.String sex, java.lang.String homeAddr,
 			java.lang.String mailingAddr, java.lang.String cellNo,
-			java.lang.Integer amount, java.lang.String id) {
+			java.lang.Integer amount, java.lang.String id,
+			java.lang.String status) {
 		this.identification = identification;
 		this.name = name;
 		this.insuredId = insuredId;
@@ -128,6 +140,7 @@ public class Insured implements java.io.Serializable {
 		this.cellNo = cellNo;
 		this.amount = amount;
 		this.id = id;
+		this.status = status;
 	}
 
 }
