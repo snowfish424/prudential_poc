@@ -25,7 +25,7 @@ public class Insured implements java.io.Serializable {
 	private java.lang.String appMailingAddr;
 	@org.kie.api.definition.type.Label("要保人手機號碼")
 	private java.lang.String appCellNo;
-	
+
 	@org.kie.api.definition.type.Label("身分別")
 	private java.lang.String identification;
 	@org.kie.api.definition.type.Label("姓名")
@@ -69,8 +69,11 @@ public class Insured implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("過去五年內是否曾患有肺氣腫")
 	private java.lang.Boolean treated5y3;
 
-	@org.kie.api.definition.type.Label(value = "高保額")
+	@org.kie.api.definition.type.Label("高保額")
 	private java.lang.Boolean highPremium;
+
+	@org.kie.api.definition.type.Label(value = "與被保險人之關係")
+	private java.lang.String relation;
 
 	public Insured() {
 	}
@@ -311,6 +314,57 @@ public class Insured implements java.io.Serializable {
 		this.treated5y2 = treated5y2;
 		this.treated5y3 = treated5y3;
 		this.highPremium = highPremium;
+	}
+
+	public java.lang.String getRelation() {
+		return this.relation;
+	}
+
+	public void setRelation(java.lang.String relation) {
+		this.relation = relation;
+	}
+
+	public Insured(java.lang.String appIdentification,
+			java.lang.String appName, java.lang.String appId,
+			java.lang.Integer appAge, java.lang.String appSex,
+			java.lang.String appHomeAddr, java.lang.String appMailingAddr,
+			java.lang.String appCellNo, java.lang.String identification,
+			java.lang.String name, java.lang.String insuredId,
+			java.lang.Integer age, java.lang.String sex,
+			java.lang.String homeAddr, java.lang.String mailingAddr,
+			java.lang.String cellNo, java.lang.Integer amount,
+			java.lang.String status, java.lang.Boolean handicapped,
+			java.lang.Boolean guardian, java.lang.String product,
+			java.lang.Boolean treated2m, java.lang.Boolean treated5y1,
+			java.lang.Boolean treated5y2, java.lang.Boolean treated5y3,
+			java.lang.Boolean highPremium, java.lang.String relation) {
+		this.appIdentification = appIdentification;
+		this.appName = appName;
+		this.appId = appId;
+		this.appAge = appAge;
+		this.appSex = appSex;
+		this.appHomeAddr = appHomeAddr;
+		this.appMailingAddr = appMailingAddr;
+		this.appCellNo = appCellNo;
+		this.identification = identification;
+		this.name = name;
+		this.insuredId = insuredId;
+		this.age = age;
+		this.sex = sex;
+		this.homeAddr = homeAddr;
+		this.mailingAddr = mailingAddr;
+		this.cellNo = cellNo;
+		this.amount = amount;
+		this.status = status;
+		this.handicapped = handicapped;
+		this.guardian = guardian;
+		this.product = product;
+		this.treated2m = treated2m;
+		this.treated5y1 = treated5y1;
+		this.treated5y2 = treated5y2;
+		this.treated5y3 = treated5y3;
+		this.highPremium = highPremium;
+		this.relation = relation;
 	}
 
 }
