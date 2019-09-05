@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_BmYfkM-_EemPH6glI9Oflg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_Ikv_4M-_EemPH6glI9Oflg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_applicationItem" structureRef="com.redhat.prudential_poc.pojo.Application"/>
   <bpmn2:itemDefinition id="_insuredItem" structureRef="com.redhat.prudential_poc.pojo.Insured"/>
   <bpmn2:itemDefinition id="_policyItem" structureRef="com.redhat.prudential_poc.pojo.Policy"/>
@@ -115,7 +115,7 @@
           <drools:metaValue><![CDATA[兩問項中一]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfkc-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "低保額或其他");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_4c-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "低保額或其他");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_099A32FD-C4C1-47A8-8902-B99BE4847BEC" name="資料不全" sourceRef="_481A8B9C-DCD4-44B8-8A54-E2C32511D6FA" targetRef="_51D38839-3F9C-4DCA-B106-CA7C53CF8E44">
       <bpmn2:extensionElements>
@@ -129,7 +129,7 @@
           <drools:metaValue><![CDATA[資料不全]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfks-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "資料不全");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_4s-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "資料不全");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_D74E3237-1015-4775-AF8B-D6DAEB10E9E1" sourceRef="_481A8B9C-DCD4-44B8-8A54-E2C32511D6FA" targetRef="_B0F47514-DA23-4ABF-B15C-0E2667A8AE93"/>
     <bpmn2:sequenceFlow id="_F05FF99B-110C-4EE4-B142-1F9B5CA40CD9" sourceRef="_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3" targetRef="_481A8B9C-DCD4-44B8-8A54-E2C32511D6FA">
@@ -175,7 +175,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfk8-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_48-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_788701E0-F575-4292-A35A-DDF2B0AF8DF1" sourceRef="_2EDC0AF5-680D-4E62-ABF3-77709D8FDFE3" targetRef="_8F633FB7-4C9E-407F-8371-DEA8442D04AD">
       <bpmn2:extensionElements>
@@ -186,7 +186,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYflM-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_5M-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_2EB57F8A-6852-4C10-A8ED-082D9020678C" sourceRef="_B4E71B66-E418-4275-8F9E-A59857F40DEA" targetRef="_2EDC0AF5-680D-4E62-ABF3-77709D8FDFE3">
       <bpmn2:extensionElements>
@@ -208,7 +208,7 @@
           <drools:metaValue><![CDATA[有拒保記錄]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYflc-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "拒保");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_5c-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "拒保");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_FE22AD70-958D-4949-A98B-5750645F2DCA" name="拒保" sourceRef="_C455E26A-516F-4CDD-A3D9-0C7A3EE9E1FD" targetRef="_3F3380CE-37D6-4C32-953D-99B811BD8EF3">
       <bpmn2:extensionElements>
@@ -219,7 +219,7 @@
           <drools:metaValue><![CDATA[拒保]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfls-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "reject");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_5s-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "reject");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_AEE1282E-9F53-45AE-8B1B-50ABD315C757" name="高保額" sourceRef="_48B1E4FA-88D1-4AFB-B6B2-25B7F015AA9B" targetRef="_C9D5D7D5-9D52-4169-BFE9-C531258D835C">
       <bpmn2:extensionElements>
@@ -227,7 +227,7 @@
           <drools:metaValue><![CDATA[高保額]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfl8-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(insured.getHighPremium());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_58-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(insured.getHighPremium());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_ADCAA446-EF71-47A7-BD67-DF3B1DD0EC89" sourceRef="_48B1E4FA-88D1-4AFB-B6B2-25B7F015AA9B" targetRef="_6AEE705A-1C6E-47BC-9234-6B619928880A">
       <bpmn2:extensionElements>
@@ -235,7 +235,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfmM-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_6M-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_FF28908B-4B68-4531-A021-96511BB0D2BE" sourceRef="_5273FCB8-1046-492D-A60D-2E106ACB8BBC" targetRef="_48B1E4FA-88D1-4AFB-B6B2-25B7F015AA9B">
       <bpmn2:extensionElements>
@@ -266,7 +266,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfmc-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(insured.getHighPremium());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_6c-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(insured.getHighPremium());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_68AE6B7B-7AB4-4191-BBC9-AEC30F1CE4AD" sourceRef="_9F97A401-AD5A-4850-82A9-2D69AADC2F98" targetRef="_D2721064-E3E9-4586-A3CB-5FF471114C7D">
       <bpmn2:extensionElements>
@@ -284,7 +284,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfms-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_6s-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_7AD240BB-0C77-4A50-97E2-C8D49309BC40" name="照會體檢" sourceRef="_17925C0D-EC9A-4A5F-9469-D070D576867D" targetRef="_2B39171F-A4FD-4AED-A899-EE164CE3EE29">
       <bpmn2:extensionElements>
@@ -295,7 +295,7 @@
           <drools:metaValue><![CDATA[照會體檢]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfm8-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "照會體檢");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_68-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "照會體檢");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_AB45D2BD-A7BF-4C67-8102-D09FD8F3226E" sourceRef="_6AEE705A-1C6E-47BC-9234-6B619928880A" targetRef="_17925C0D-EC9A-4A5F-9469-D070D576867D">
       <bpmn2:extensionElements>
@@ -336,7 +336,7 @@
           <drools:metaValue><![CDATA[Pass]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfnM-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_7M-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PASS");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_29BE65F0-E493-493A-9832-77882B41F2E8" sourceRef="_1BEF5D1B-5391-4336-9A3C-336D8D31DB56" targetRef="_6D665173-A7C6-42FF-8717-19F2E6147596">
       <bpmn2:extensionElements>
@@ -357,7 +357,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfnc-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(insured.getHighPremium());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_7c-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(insured.getHighPremium());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_64362411-A32E-4B45-B911-9FD38CCA44BF" name="承保" sourceRef="_E244A361-4141-4D1D-BA2B-C33B86E2BA99" targetRef="_A74756CB-F454-461F-939F-2B9C1DD4E28D">
       <bpmn2:extensionElements>
@@ -365,7 +365,7 @@
           <drools:metaValue><![CDATA[承保]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfns-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PAAS");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_7s-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "PAAS");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_C2B6F32C-4859-4FB9-A89D-4478E91791FE" name="拒保" sourceRef="_E244A361-4141-4D1D-BA2B-C33B86E2BA99" targetRef="_64D04BE4-468B-4734-83F5-197F120CF349">
       <bpmn2:extensionElements>
@@ -373,7 +373,7 @@
           <drools:metaValue><![CDATA[拒保]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_BmYfn8-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "拒保");]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Ikv_78-_EemPH6glI9Oflg" language="http://www.java.com/java"><![CDATA[return KieFunctions.equalsTo(insured.getStatus(), "拒保");]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_03E42A05-F64A-45C3-BB42-1B63ED7B5E39" sourceRef="_8F633FB7-4C9E-407F-8371-DEA8442D04AD" targetRef="_E244A361-4141-4D1D-BA2B-C33B86E2BA99">
       <bpmn2:extensionElements>
@@ -396,7 +396,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_788701E0-F575-4292-A35A-DDF2B0AF8DF1</bpmn2:incoming>
       <bpmn2:outgoing>_03E42A05-F64A-45C3-BB42-1B63ED7B5E39</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYfoM-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_Ikv_8M-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_8F633FB7-4C9E-407F-8371-DEA8442D04AD_ConnectTimeoutInputX" drools:dtype="String" itemSubjectRef="__8F633FB7-4C9E-407F-8371-DEA8442D04AD_ConnectTimeoutInputXItem" name="ConnectTimeout"/>
         <bpmn2:dataInput id="_8F633FB7-4C9E-407F-8371-DEA8442D04AD_ContentDataInputX" drools:dtype="String" itemSubjectRef="__8F633FB7-4C9E-407F-8371-DEA8442D04AD_ContentDataInputXItem" name="ContentData"/>
         <bpmn2:dataInput id="_8F633FB7-4C9E-407F-8371-DEA8442D04AD_MethodInputX" drools:dtype="String" itemSubjectRef="__8F633FB7-4C9E-407F-8371-DEA8442D04AD_MethodInputXItem" name="Method"/>
@@ -406,7 +406,7 @@
         <bpmn2:dataInput id="_8F633FB7-4C9E-407F-8371-DEA8442D04AD_UsernameInputX" drools:dtype="String" itemSubjectRef="__8F633FB7-4C9E-407F-8371-DEA8442D04AD_UsernameInputXItem" name="Username"/>
         <bpmn2:dataInput id="_8F633FB7-4C9E-407F-8371-DEA8442D04AD_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
         <bpmn2:dataOutput id="_8F633FB7-4C9E-407F-8371-DEA8442D04AD_ResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__8F633FB7-4C9E-407F-8371-DEA8442D04AD_ResultOutputXItem" name="Result"/>
-        <bpmn2:inputSet id="_BmYfoc-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_Ikv_8c-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_ConnectTimeoutInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_ContentDataInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_MethodInputX</bpmn2:dataInputRefs>
@@ -416,15 +416,15 @@
           <bpmn2:dataInputRefs>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_UsernameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_TaskNameInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_BmYfos-_EemPH6glI9Oflg">
+        <bpmn2:outputSet id="_Ikv_8s-_EemPH6glI9Oflg">
           <bpmn2:dataOutputRefs>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_ResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYfo8-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_Ikv_88-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_8F633FB7-4C9E-407F-8371-DEA8442D04AD_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYfpM-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYfpc-_EemPH6glI9Oflg"><![CDATA[Rest]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYfps-_EemPH6glI9Oflg">_8F633FB7-4C9E-407F-8371-DEA8442D04AD_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_Ikv_9M-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Ikv_9c-_EemPH6glI9Oflg"><![CDATA[Rest]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Ikv_9s-_EemPH6glI9Oflg">_8F633FB7-4C9E-407F-8371-DEA8442D04AD_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
     </bpmn2:task>
@@ -444,21 +444,21 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_0451153B-8356-4FA1-A367-E05F0C1074CA</bpmn2:incoming>
       <bpmn2:outgoing>_2EB57F8A-6852-4C10-A8ED-082D9020678C</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYfp8-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_Ikv_98-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredInputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredInputXItem" name="insured"/>
         <bpmn2:dataOutput id="_B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredOutputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredOutputXItem" name="insured"/>
-        <bpmn2:inputSet id="_BmYfqM-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_Ikv_-M-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_BmYfqc-_EemPH6glI9Oflg">
+        <bpmn2:outputSet id="_Ikv_-c-_EemPH6glI9Oflg">
           <bpmn2:dataOutputRefs>_B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYfqs-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_Ikv_-s-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>insured</bpmn2:sourceRef>
         <bpmn2:targetRef>_B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_BmYfq8-_EemPH6glI9Oflg">
+      <bpmn2:dataOutputAssociation id="_Ikv_-8-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>_B4E71B66-E418-4275-8F9E-A59857F40DEA_insuredOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>insured</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -503,32 +503,32 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_C6FF54DB-0479-4496-8391-2CD6C803198F</bpmn2:incoming>
       <bpmn2:outgoing>_F05FF99B-110C-4EE4-B142-1F9B5CA40CD9</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYfrM-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_Ikwm8M-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_insuredInputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_insuredInputXItem" name="insured"/>
         <bpmn2:dataInput id="_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_SkippableInputX" drools:dtype="Object" itemSubjectRef="__902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_BmYfrc-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_Ikwm8c-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_insuredInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_SkippableInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYfrs-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_Ikwm8s-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYfr8-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYfsM-_EemPH6glI9Oflg"><![CDATA[Task]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYfsc-_EemPH6glI9Oflg">_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_Ikwm88-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Ikwm9M-_EemPH6glI9Oflg"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Ikwm9c-_EemPH6glI9Oflg">_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_BmYfss-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_Ikwm9s-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>insured</bpmn2:sourceRef>
         <bpmn2:targetRef>_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_insuredInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_BmYfs8-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_Ikwm98-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYftM-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYftc-_EemPH6glI9Oflg"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYfts-_EemPH6glI9Oflg">_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_Ikwm-M-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Ikwm-c-_EemPH6glI9Oflg"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Ikwm-s-_EemPH6glI9Oflg">_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
     </bpmn2:userTask>
@@ -540,26 +540,26 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_099A32FD-C4C1-47A8-8902-B99BE4847BEC</bpmn2:incoming>
       <bpmn2:outgoing>_3C8094E0-0AC5-4ACE-9649-5BED646A8CC5</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYft8-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_Ikwm-8-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__51D38839-3F9C-4DCA-B106-CA7C53CF8E44_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_SkippableInputX" drools:dtype="Object" itemSubjectRef="__51D38839-3F9C-4DCA-B106-CA7C53CF8E44_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_BmYfuM-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_Ikwm_M-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_SkippableInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYfuc-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_Ikwm_c-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYfus-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYfu8-_EemPH6glI9Oflg"><![CDATA[Task]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYfvM-_EemPH6glI9Oflg">_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_Ikwm_s-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Ikwm_8-_EemPH6glI9Oflg"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IkwnAM-_EemPH6glI9Oflg">_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_BmYfvc-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnAc-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYfvs-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYfv8-_EemPH6glI9Oflg"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYfwM-_EemPH6glI9Oflg">_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_IkwnAs-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IkwnA8-_EemPH6glI9Oflg"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IkwnBM-_EemPH6glI9Oflg">_51D38839-3F9C-4DCA-B106-CA7C53CF8E44_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
     </bpmn2:userTask>
@@ -594,21 +594,21 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_ADCAA446-EF71-47A7-BD67-DF3B1DD0EC89</bpmn2:incoming>
       <bpmn2:outgoing>_AB45D2BD-A7BF-4C67-8102-D09FD8F3226E</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYfwc-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_IkwnBc-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_6AEE705A-1C6E-47BC-9234-6B619928880A_insuredInputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__6AEE705A-1C6E-47BC-9234-6B619928880A_insuredInputXItem" name="insured"/>
         <bpmn2:dataOutput id="_6AEE705A-1C6E-47BC-9234-6B619928880A_insuredOutputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__6AEE705A-1C6E-47BC-9234-6B619928880A_insuredOutputXItem" name="insured"/>
-        <bpmn2:inputSet id="_BmYfws-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_IkwnBs-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_6AEE705A-1C6E-47BC-9234-6B619928880A_insuredInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_BmYfw8-_EemPH6glI9Oflg">
+        <bpmn2:outputSet id="_IkwnB8-_EemPH6glI9Oflg">
           <bpmn2:dataOutputRefs>_6AEE705A-1C6E-47BC-9234-6B619928880A_insuredOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYfxM-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnCM-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>insured</bpmn2:sourceRef>
         <bpmn2:targetRef>_6AEE705A-1C6E-47BC-9234-6B619928880A_insuredInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_BmYfxc-_EemPH6glI9Oflg">
+      <bpmn2:dataOutputAssociation id="_IkwnCc-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>_6AEE705A-1C6E-47BC-9234-6B619928880A_insuredOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>insured</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -621,32 +621,32 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_58BB49B0-0F17-438A-BCCB-4B398ADBFA81</bpmn2:incoming>
       <bpmn2:outgoing>_0451153B-8356-4FA1-A367-E05F0C1074CA</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYfxs-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_IkwnCs-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__F5C129EC-E8AE-4683-AA9C-A937D1CC179B_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_insuredInputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__F5C129EC-E8AE-4683-AA9C-A937D1CC179B_insuredInputXItem" name="insured"/>
         <bpmn2:dataInput id="_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_SkippableInputX" drools:dtype="Object" itemSubjectRef="__F5C129EC-E8AE-4683-AA9C-A937D1CC179B_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_BmYfx8-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_IkwnC8-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_insuredInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_SkippableInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYfyM-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnDM-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYfyc-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYfys-_EemPH6glI9Oflg"><![CDATA[Task]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYfy8-_EemPH6glI9Oflg">_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_IkwnDc-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IkwnDs-_EemPH6glI9Oflg"><![CDATA[Task]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IkwnD8-_EemPH6glI9Oflg">_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_BmYfzM-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnEM-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>insured</bpmn2:sourceRef>
         <bpmn2:targetRef>_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_insuredInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_BmYfzc-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnEc-_EemPH6glI9Oflg">
         <bpmn2:targetRef>_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_BmYfzs-_EemPH6glI9Oflg">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_BmYfz8-_EemPH6glI9Oflg"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_BmYf0M-_EemPH6glI9Oflg">_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_IkwnEs-_EemPH6glI9Oflg">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IkwnE8-_EemPH6glI9Oflg"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IkwnFM-_EemPH6glI9Oflg">_F5C129EC-E8AE-4683-AA9C-A937D1CC179B_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
     </bpmn2:userTask>
@@ -664,27 +664,27 @@
           <drools:metaValue><![CDATA[3.﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿既有保單保額檢核]]></drools:metaValue>
         </drools:metaData>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[if (policy.getAmount() + insured.getgetAmount() > 1500) insured.setHighPremium(true);
+          <drools:script><![CDATA[if (policy.getAmount() + insured.getAmount() > 1500) insured.setHighPremium(true);
 System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></drools:script>
         </drools:onExit-script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_B6AA1449-A2AD-4961-A61E-09C07D352820</bpmn2:incoming>
       <bpmn2:outgoing>_FF28908B-4B68-4531-A021-96511BB0D2BE</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYf0c-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_IkwnFc-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_5273FCB8-1046-492D-A60D-2E106ACB8BBC_insuredInputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__5273FCB8-1046-492D-A60D-2E106ACB8BBC_insuredInputXItem" name="insured"/>
         <bpmn2:dataOutput id="_5273FCB8-1046-492D-A60D-2E106ACB8BBC_policyOutputX" drools:dtype="com.redhat.prudential_poc.pojo.Policy" itemSubjectRef="__5273FCB8-1046-492D-A60D-2E106ACB8BBC_policyOutputXItem" name="policy"/>
-        <bpmn2:inputSet id="_BmYf0s-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_IkwnFs-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_5273FCB8-1046-492D-A60D-2E106ACB8BBC_insuredInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_BmYf08-_EemPH6glI9Oflg">
+        <bpmn2:outputSet id="_IkwnF8-_EemPH6glI9Oflg">
           <bpmn2:dataOutputRefs>_5273FCB8-1046-492D-A60D-2E106ACB8BBC_policyOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYf1M-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnGM-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>insured</bpmn2:sourceRef>
         <bpmn2:targetRef>_5273FCB8-1046-492D-A60D-2E106ACB8BBC_insuredInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_BmYf1c-_EemPH6glI9Oflg">
+      <bpmn2:dataOutputAssociation id="_IkwnGc-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>_5273FCB8-1046-492D-A60D-2E106ACB8BBC_policyOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>policy</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -746,21 +746,21 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
       </bpmn2:extensionElements>
       <bpmn2:incoming>_6DE728BC-BBC2-4E94-A1C8-9E02304A4E51</bpmn2:incoming>
       <bpmn2:outgoing>_447BFDCE-96B3-41A4-9C46-937905E833D6</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BmYf1s-_EemPH6glI9Oflg">
+      <bpmn2:ioSpecification id="_IkwnGs-_EemPH6glI9Oflg">
         <bpmn2:dataInput id="_A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredInputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredInputXItem" name="insured"/>
         <bpmn2:dataOutput id="_A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredOutputX" drools:dtype="com.redhat.prudential_poc.pojo.Insured" itemSubjectRef="__A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredOutputXItem" name="insured"/>
-        <bpmn2:inputSet id="_BmYf18-_EemPH6glI9Oflg">
+        <bpmn2:inputSet id="_IkwnG8-_EemPH6glI9Oflg">
           <bpmn2:dataInputRefs>_A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_BmYf2M-_EemPH6glI9Oflg">
+        <bpmn2:outputSet id="_IkwnHM-_EemPH6glI9Oflg">
           <bpmn2:dataOutputRefs>_A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BmYf2c-_EemPH6glI9Oflg">
+      <bpmn2:dataInputAssociation id="_IkwnHc-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>insured</bpmn2:sourceRef>
         <bpmn2:targetRef>_A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_BmYf2s-_EemPH6glI9Oflg">
+      <bpmn2:dataOutputAssociation id="_IkwnHs-_EemPH6glI9Oflg">
         <bpmn2:sourceRef>_A44C82A5-8DFE-49EE-85A4-860E73845EE0_insuredOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>insured</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -781,8 +781,8 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
       <bpmn2:outgoing>_64362411-A32E-4B45-B911-9FD38CCA44BF</bpmn2:outgoing>
     </bpmn2:exclusiveGateway>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_BmYf28-_EemPH6glI9Oflg">
-    <bpmndi:BPMNPlane id="_BmYf3M-_EemPH6glI9Oflg" bpmnElement="prudential_poc.UnderwritingRule">
+  <bpmndi:BPMNDiagram id="_IkwnH8-_EemPH6glI9Oflg">
+    <bpmndi:BPMNPlane id="_IkwnIM-_EemPH6glI9Oflg" bpmnElement="prudential_poc.UnderwritingRule">
       <bpmndi:BPMNShape id="shape__E244A361-4141-4D1D-BA2B-C33B86E2BA99" bpmnElement="_E244A361-4141-4D1D-BA2B-C33B86E2BA99">
         <dc:Bounds height="55.999985" width="56.0" x="2102.0" y="255.39754"/>
       </bpmndi:BPMNShape>
@@ -1017,12 +1017,12 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_BmYf3c-_EemPH6glI9Oflg" type="BPSimData">
+  <bpmn2:relationship id="_IkwnIc-_EemPH6glI9Oflg" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1BEF5D1B-5391-4336-9A3C-336D8D31DB56" id="_BmYf3s-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1BEF5D1B-5391-4336-9A3C-336D8D31DB56" id="_IkwnIs-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1042,7 +1042,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_A44C82A5-8DFE-49EE-85A4-860E73845EE0" id="_BmYf38-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_A44C82A5-8DFE-49EE-85A4-860E73845EE0" id="_IkwnI8-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1062,34 +1062,14 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9F97A401-AD5A-4850-82A9-2D69AADC2F98" id="_BmYf4M-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9F97A401-AD5A-4850-82A9-2D69AADC2F98" id="_IkwnJM-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F75B8E13-7750-43A5-8E9C-86B7587BD3E8" id="_BmYf4c-_EemPH6glI9Oflg">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
-              <bpsim:Availability xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Availability>
-              <bpsim:Quantity xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Quantity>
-            </bpsim:ResourceParameters>
-            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
-              <bpsim:UnitCost xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:UnitCost>
-            </bpsim:CostParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3F3380CE-37D6-4C32-953D-99B811BD8EF3" id="_BmYf4s-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F75B8E13-7750-43A5-8E9C-86B7587BD3E8" id="_IkwnJc-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1109,7 +1089,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5273FCB8-1046-492D-A60D-2E106ACB8BBC" id="_BmYf48-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3F3380CE-37D6-4C32-953D-99B811BD8EF3" id="_IkwnJs-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1129,7 +1109,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F5C129EC-E8AE-4683-AA9C-A937D1CC179B" id="_BmYf5M-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5273FCB8-1046-492D-A60D-2E106ACB8BBC" id="_IkwnJ8-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1149,7 +1129,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_6AEE705A-1C6E-47BC-9234-6B619928880A" id="_BmYf5c-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F5C129EC-E8AE-4683-AA9C-A937D1CC179B" id="_IkwnKM-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1169,7 +1149,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_00DA4DE9-6BB5-4FAD-BA64-4D182BBAAA69" id="_BmYf5s-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_6AEE705A-1C6E-47BC-9234-6B619928880A" id="_IkwnKc-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1189,7 +1169,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_51D38839-3F9C-4DCA-B106-CA7C53CF8E44" id="_BmYf58-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_00DA4DE9-6BB5-4FAD-BA64-4D182BBAAA69" id="_IkwnKs-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1209,7 +1189,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3" id="_BmYf6M-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_51D38839-3F9C-4DCA-B106-CA7C53CF8E44" id="_IkwnK8-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1229,7 +1209,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C9D5D7D5-9D52-4169-BFE9-C531258D835C" id="_BmYf6c-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_902F9343-C69F-49B0-ADC3-06F7DB6B2EB3" id="_IkwnLM-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1249,7 +1229,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_64D04BE4-468B-4734-83F5-197F120CF349" id="_BmYf6s-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C9D5D7D5-9D52-4169-BFE9-C531258D835C" id="_IkwnLc-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1269,7 +1249,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B4E71B66-E418-4275-8F9E-A59857F40DEA" id="_BmYf68-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_64D04BE4-468B-4734-83F5-197F120CF349" id="_IkwnLs-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1289,7 +1269,27 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8F633FB7-4C9E-407F-8371-DEA8442D04AD" id="_BmYf7M-_EemPH6glI9Oflg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B4E71B66-E418-4275-8F9E-A59857F40DEA" id="_IkwnL8-_EemPH6glI9Oflg">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8F633FB7-4C9E-407F-8371-DEA8442D04AD" id="_IkwnMM-_EemPH6glI9Oflg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -1312,7 +1312,7 @@ System.out.println("是否高保額 ===> " + insured.setHighPremium());]]></droo
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_BmYfkM-_EemPH6glI9Oflg</bpmn2:source>
-    <bpmn2:target>_BmYfkM-_EemPH6glI9Oflg</bpmn2:target>
+    <bpmn2:source>_Ikv_4M-_EemPH6glI9Oflg</bpmn2:source>
+    <bpmn2:target>_Ikv_4M-_EemPH6glI9Oflg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
