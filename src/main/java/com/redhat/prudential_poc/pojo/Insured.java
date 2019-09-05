@@ -9,6 +9,23 @@ public class Insured implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@org.kie.api.definition.type.Label("要保人身分別")
+	private java.lang.String appIdentification;
+	@org.kie.api.definition.type.Label("要保人姓名")
+	private java.lang.String appName;
+	@org.kie.api.definition.type.Label("要保人ID")
+	private java.lang.String appId;
+	@org.kie.api.definition.type.Label("要保人年齡")
+	private java.lang.Integer appAge;
+	@org.kie.api.definition.type.Label("要保人性別")
+	private java.lang.String appSex;
+	@org.kie.api.definition.type.Label("要保人戶籍地址")
+	private java.lang.String appHomeAddr;
+	@org.kie.api.definition.type.Label("要保人通訊地址")
+	private java.lang.String appMailingAddr;
+	@org.kie.api.definition.type.Label("要保人手機號碼")
+	private java.lang.String appCellNo;
+	
 	@org.kie.api.definition.type.Label("身分別")
 	private java.lang.String identification;
 	@org.kie.api.definition.type.Label("姓名")
@@ -27,8 +44,6 @@ public class Insured implements java.io.Serializable {
 	private java.lang.String cellNo;
 	@org.kie.api.definition.type.Label("保額")
 	private java.lang.Integer amount;
-	@org.kie.api.definition.type.Label("要保人ID")
-	private java.lang.String id;
 
 	@org.kie.api.definition.type.Label("核保結果")
 	private java.lang.String status;
@@ -132,14 +147,6 @@ public class Insured implements java.io.Serializable {
 		this.amount = amount;
 	}
 
-	public java.lang.String getId() {
-		return this.id;
-	}
-
-	public void setId(java.lang.String id) {
-		this.id = id;
-	}
-
 	public java.lang.String getStatus() {
 		return this.status;
 	}
@@ -212,6 +219,70 @@ public class Insured implements java.io.Serializable {
 		this.highPremium = highPremium;
 	}
 
+	public java.lang.String getAppIdentification() {
+		return appIdentification;
+	}
+
+	public void setAppIdentification(java.lang.String appIdentification) {
+		this.appIdentification = appIdentification;
+	}
+
+	public java.lang.String getAppName() {
+		return appName;
+	}
+
+	public void setAppName(java.lang.String appName) {
+		this.appName = appName;
+	}
+
+	public java.lang.String getAppId() {
+		return appId;
+	}
+
+	public void setAppId(java.lang.String appId) {
+		this.appId = appId;
+	}
+
+	public java.lang.Integer getAppAge() {
+		return appAge;
+	}
+
+	public void setAppAge(java.lang.Integer appAge) {
+		this.appAge = appAge;
+	}
+
+	public java.lang.String getAppSex() {
+		return appSex;
+	}
+
+	public void setAppSex(java.lang.String appSex) {
+		this.appSex = appSex;
+	}
+
+	public java.lang.String getAppHomeAddr() {
+		return appHomeAddr;
+	}
+
+	public void setAppHomeAddr(java.lang.String appHomeAddr) {
+		this.appHomeAddr = appHomeAddr;
+	}
+
+	public java.lang.String getAppMailingAddr() {
+		return appMailingAddr;
+	}
+
+	public void setAppMailingAddr(java.lang.String appMailingAddr) {
+		this.appMailingAddr = appMailingAddr;
+	}
+
+	public java.lang.String getAppCellNo() {
+		return appCellNo;
+	}
+
+	public void setAppCellNo(java.lang.String appCellNo) {
+		this.appCellNo = appCellNo;
+	}
+
 	public Insured(java.lang.String identification, java.lang.String name,
 			java.lang.String insuredId, java.lang.Integer age,
 			java.lang.String sex, java.lang.String homeAddr,
@@ -231,7 +302,6 @@ public class Insured implements java.io.Serializable {
 		this.mailingAddr = mailingAddr;
 		this.cellNo = cellNo;
 		this.amount = amount;
-		this.id = id;
 		this.status = status;
 		this.handicapped = handicapped;
 		this.guardian = guardian;
