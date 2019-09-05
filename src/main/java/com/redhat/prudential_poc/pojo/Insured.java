@@ -72,8 +72,11 @@ public class Insured implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("高保額")
 	private java.lang.Boolean highPremium;
 
-	@org.kie.api.definition.type.Label(value = "與被保險人之關係")
+	@org.kie.api.definition.type.Label("與被保險人之關係")
 	private java.lang.String relation;
+
+	@org.kie.api.definition.type.Label(value = "保單總額")
+	private java.lang.Integer totalAmt;
 
 	public Insured() {
 	}
@@ -324,6 +327,14 @@ public class Insured implements java.io.Serializable {
 		this.relation = relation;
 	}
 
+	public java.lang.Integer getTotalAmt() {
+		return this.totalAmt;
+	}
+
+	public void setTotalAmt(java.lang.Integer totalAmt) {
+		this.totalAmt = totalAmt;
+	}
+
 	public Insured(java.lang.String appIdentification,
 			java.lang.String appName, java.lang.String appId,
 			java.lang.Integer appAge, java.lang.String appSex,
@@ -337,7 +348,8 @@ public class Insured implements java.io.Serializable {
 			java.lang.Boolean guardian, java.lang.String product,
 			java.lang.Boolean treated2m, java.lang.Boolean treated5y1,
 			java.lang.Boolean treated5y2, java.lang.Boolean treated5y3,
-			java.lang.Boolean highPremium, java.lang.String relation) {
+			java.lang.Boolean highPremium, java.lang.String relation,
+			java.lang.Integer totalAmt) {
 		this.appIdentification = appIdentification;
 		this.appName = appName;
 		this.appId = appId;
@@ -365,6 +377,7 @@ public class Insured implements java.io.Serializable {
 		this.treated5y3 = treated5y3;
 		this.highPremium = highPremium;
 		this.relation = relation;
+		this.totalAmt = totalAmt;
 	}
 
 }
