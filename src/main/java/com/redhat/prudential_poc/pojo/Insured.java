@@ -8,7 +8,7 @@ package com.redhat.prudential_poc.pojo;
 public class Insured implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
-	
+
 	@org.kie.api.definition.type.Label("身分別")
 	private java.lang.String identification;
 	@org.kie.api.definition.type.Label("姓名")
@@ -30,8 +30,14 @@ public class Insured implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("要保人ID")
 	private java.lang.String id;
 
-	@org.kie.api.definition.type.Label(value = "核保結果")
+	@org.kie.api.definition.type.Label("核保結果")
 	private java.lang.String status;
+
+	@org.kie.api.definition.type.Label(value = "身心障礙者")
+	private java.lang.Boolean handicapped;
+
+	@org.kie.api.definition.type.Label(value = "監護宣告")
+	private java.lang.Boolean guardian;
 
 	public Insured() {
 	}
@@ -124,12 +130,29 @@ public class Insured implements java.io.Serializable {
 		this.status = status;
 	}
 
+	public java.lang.Boolean getHandicapped() {
+		return this.handicapped;
+	}
+
+	public void setHandicapped(java.lang.Boolean handicapped) {
+		this.handicapped = handicapped;
+	}
+
+	public java.lang.Boolean getGuardian() {
+		return this.guardian;
+	}
+
+	public void setGuardian(java.lang.Boolean guardian) {
+		this.guardian = guardian;
+	}
+
 	public Insured(java.lang.String identification, java.lang.String name,
 			java.lang.String insuredId, java.lang.Integer age,
 			java.lang.String sex, java.lang.String homeAddr,
 			java.lang.String mailingAddr, java.lang.String cellNo,
 			java.lang.Integer amount, java.lang.String id,
-			java.lang.String status) {
+			java.lang.String status, java.lang.Boolean handicapped,
+			java.lang.Boolean guardian) {
 		this.identification = identification;
 		this.name = name;
 		this.insuredId = insuredId;
@@ -141,6 +164,8 @@ public class Insured implements java.io.Serializable {
 		this.amount = amount;
 		this.id = id;
 		this.status = status;
+		this.handicapped = handicapped;
+		this.guardian = guardian;
 	}
 
 }
