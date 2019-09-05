@@ -39,8 +39,20 @@ public class Insured implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("監護宣告")
 	private java.lang.Boolean guardian;
 
-	@org.kie.api.definition.type.Label(value = "商品")
+	@org.kie.api.definition.type.Label("商品")
 	private java.lang.String product;
+
+	@org.kie.api.definition.type.Label(value = "二個月內是否曾因受傷或生病接受醫生治療、診療或用藥")
+	private java.lang.Boolean treated2m;
+
+	@org.kie.api.definition.type.Label(value = "過去五年內是否曾患有高血壓症")
+	private java.lang.Boolean treated5y1;
+
+	@org.kie.api.definition.type.Label(value = "過去五年內是否曾患有腦中風")
+	private java.lang.Boolean treated5y2;
+
+	@org.kie.api.definition.type.Label(value = "過去五年內是否曾患有肺氣腫")
+	private java.lang.Boolean treated5y3;
 
 	public Insured() {
 	}
@@ -157,13 +169,47 @@ public class Insured implements java.io.Serializable {
 		this.product = product;
 	}
 
+	public java.lang.Boolean getTreated2m() {
+		return this.treated2m;
+	}
+
+	public void setTreated2m(java.lang.Boolean treated2m) {
+		this.treated2m = treated2m;
+	}
+
+	public java.lang.Boolean getTreated5y1() {
+		return this.treated5y1;
+	}
+
+	public void setTreated5y1(java.lang.Boolean treated5y1) {
+		this.treated5y1 = treated5y1;
+	}
+
+	public java.lang.Boolean getTreated5y2() {
+		return this.treated5y2;
+	}
+
+	public void setTreated5y2(java.lang.Boolean treated5y2) {
+		this.treated5y2 = treated5y2;
+	}
+
+	public java.lang.Boolean getTreated5y3() {
+		return this.treated5y3;
+	}
+
+	public void setTreated5y3(java.lang.Boolean treated5y3) {
+		this.treated5y3 = treated5y3;
+	}
+
 	public Insured(java.lang.String identification, java.lang.String name,
 			java.lang.String insuredId, java.lang.Integer age,
 			java.lang.String sex, java.lang.String homeAddr,
 			java.lang.String mailingAddr, java.lang.String cellNo,
 			java.lang.Integer amount, java.lang.String id,
 			java.lang.String status, java.lang.Boolean handicapped,
-			java.lang.Boolean guardian, java.lang.String product) {
+			java.lang.Boolean guardian, java.lang.String product,
+			java.lang.Boolean treated2m, java.lang.Boolean treated5y1,
+			java.lang.Boolean treated5y2, java.lang.Boolean treated5y3) {
 		this.identification = identification;
 		this.name = name;
 		this.insuredId = insuredId;
@@ -178,6 +224,10 @@ public class Insured implements java.io.Serializable {
 		this.handicapped = handicapped;
 		this.guardian = guardian;
 		this.product = product;
+		this.treated2m = treated2m;
+		this.treated5y1 = treated5y1;
+		this.treated5y2 = treated5y2;
+		this.treated5y3 = treated5y3;
 	}
 
 }
