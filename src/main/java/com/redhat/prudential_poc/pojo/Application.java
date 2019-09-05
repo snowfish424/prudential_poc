@@ -28,6 +28,9 @@ public class Application implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("與被保險人之關係")
 	private java.lang.String relation;
 
+	@org.kie.api.definition.type.Label(value = "被保險人")
+	private com.redhat.prudential_poc.pojo.Insured insured;
+
 	public Application() {
 	}
 
@@ -103,10 +106,19 @@ public class Application implements java.io.Serializable {
 		this.relation = relation;
 	}
 
+	public com.redhat.prudential_poc.pojo.Insured getInsured() {
+		return this.insured;
+	}
+
+	public void setInsured(com.redhat.prudential_poc.pojo.Insured insured) {
+		this.insured = insured;
+	}
+
 	public Application(java.lang.String identification, java.lang.String name,
 			java.lang.String id, java.lang.Integer age, java.lang.String sex,
 			java.lang.String homeAddr, java.lang.String mailingAddr,
-			java.lang.String cellNo, java.lang.String relation) {
+			java.lang.String cellNo, java.lang.String relation,
+			com.redhat.prudential_poc.pojo.Insured insured) {
 		this.identification = identification;
 		this.name = name;
 		this.id = id;
@@ -116,6 +128,7 @@ public class Application implements java.io.Serializable {
 		this.mailingAddr = mailingAddr;
 		this.cellNo = cellNo;
 		this.relation = relation;
+		this.insured = insured;
 	}
 
 }
