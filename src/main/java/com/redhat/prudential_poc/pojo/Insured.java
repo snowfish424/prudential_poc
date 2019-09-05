@@ -33,11 +33,14 @@ public class Insured implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("核保結果")
 	private java.lang.String status;
 
-	@org.kie.api.definition.type.Label(value = "身心障礙者")
+	@org.kie.api.definition.type.Label("身心障礙者")
 	private java.lang.Boolean handicapped;
 
-	@org.kie.api.definition.type.Label(value = "監護宣告")
+	@org.kie.api.definition.type.Label("監護宣告")
 	private java.lang.Boolean guardian;
+
+	@org.kie.api.definition.type.Label(value = "商品")
+	private java.lang.String product;
 
 	public Insured() {
 	}
@@ -146,13 +149,21 @@ public class Insured implements java.io.Serializable {
 		this.guardian = guardian;
 	}
 
+	public java.lang.String getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(java.lang.String product) {
+		this.product = product;
+	}
+
 	public Insured(java.lang.String identification, java.lang.String name,
 			java.lang.String insuredId, java.lang.Integer age,
 			java.lang.String sex, java.lang.String homeAddr,
 			java.lang.String mailingAddr, java.lang.String cellNo,
 			java.lang.Integer amount, java.lang.String id,
 			java.lang.String status, java.lang.Boolean handicapped,
-			java.lang.Boolean guardian) {
+			java.lang.Boolean guardian, java.lang.String product) {
 		this.identification = identification;
 		this.name = name;
 		this.insuredId = insuredId;
@@ -166,6 +177,7 @@ public class Insured implements java.io.Serializable {
 		this.status = status;
 		this.handicapped = handicapped;
 		this.guardian = guardian;
+		this.product = product;
 	}
 
 }
