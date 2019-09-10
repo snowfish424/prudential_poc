@@ -1,0 +1,9 @@
+package com.redhat.prudential_poc;
+
+import java.lang.Number;
+
+rule "highPremium"
+	dialect "mvel"
+	when
+	then
+end
