@@ -5,6 +5,7 @@ import com.redhat.prudential_poc.pojo.Insured;
 
 rule "HighPremium"
 	dialect "mvel"
+	ruleflow-group "highAmt"
 	when
 		insured : Insured( totalAmt > 1500 )
 	then
