@@ -7,7 +7,7 @@ rule "HighPremium"
 	dialect "mvel"
 	ruleflow-group "highAmt"
 	when
-		insured : Insured( totalAmt > 1500 )
+		insured : Insured( totalAmt > 2000 )
 	then
 		insured.setHighPremium( true );
 end
