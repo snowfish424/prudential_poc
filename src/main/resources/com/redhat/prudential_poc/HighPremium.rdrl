@@ -6,7 +6,7 @@ import com.redhat.prudential_poc.pojo.Insured;
 rule "HighPremium"
 	dialect "mvel"
 	when
-		insured: Insured( totalAmt + amount > 1500 )
+		insured : Insured( totalAmt > 1500 )
 	then
 		insured.setHighPremium( true );
 end
