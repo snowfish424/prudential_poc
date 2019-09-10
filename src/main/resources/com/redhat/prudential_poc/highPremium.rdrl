@@ -1,9 +1,14 @@
 package com.redhat.prudential_poc;
 
 import java.lang.Number;
+import com.redhat.prudential_poc.pojo.Insured;
 
 rule "highPremium"
 	dialect "mvel"
 	when
+		Insured( totalAmt > 1500 )
 	then
+		Insured fact0 = new Insured();
+		fact0.setHighPremium( true );
+		insert( fact0 );
 end
